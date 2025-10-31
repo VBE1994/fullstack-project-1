@@ -1,0 +1,9 @@
+:root { line-height: 1.5; }
+body { max-width: 900px; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; }
+input, button { font: inherit; }
+button:focus, input:focus { outline: 3px solid #000; outline-offset: 2px; }
+@media (max-width: 600px) { body { padding: 0.75rem; } }
+.result { min-height: 3rem; border: 1px solid #ddd; padding: 0.5rem; margin-top: 0.5rem; }
+.error { color: #b00020; }
+.success { color: #0b6; }
+.hidden { display: none; }
