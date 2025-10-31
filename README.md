@@ -11,9 +11,14 @@
 - Responsiivinen ja saavutettava käyttöliittymä.
 - XSS-esto (`escapeHTML()` funktio).
 
-## 🚀 Ajaminen paikallisesti
-### Windows
-```bash
-git clone https://github.com/vbe1994/fullstack-project-1.git
-cd fullstack-project-1
-start index.html
+## 📸 Screenshots
+
+**Home view**  
+![Home screen](assets/screenshot-home.png)
+
+**Result view**  
+![Result screen](assets/screenshot-result.png)
+
+**Error validation**  
+![Error example](assets/screenshot-error.png)
+
