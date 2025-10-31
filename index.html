@@ -3,35 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project 1 – Demo</title>
-  <meta name="description" content="Project 1 demo: input → result with validation, loading state, accessibility and XSS protection." />
+  <title>Text Processor – Project 1</title>
+  <meta name="description" content="Full Stack Project 1 – Simple text processor with validation, accessibility, and XSS protection." />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header>
-    <h1 id="app-title">Project 1</h1>
-    <p>A short description of what the app does.</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Text Processor</h1>
+      <p class="subtitle">A lightweight and accessible text processing demo</p>
+    </header>
 
-  <main id="app" role="main">
-    <form id="form" aria-describedby="formHelp" novalidate>
-      <label for="inputText">Input</label>
-      <input id="inputText" name="inputText" required aria-required="true" />
-      <button id="submitBtn" type="submit" aria-live="off">Run</button>
-      <p id="formHelp">Enter a value and press Run. Empty input will show an error.</p>
-    </form>
+    <main>
+      <form id="form" aria-describedby="formHelp" novalidate>
+        <label for="inputText" class="label">Your text</label>
+        <div class="input-row">
+          <input id="inputText" name="inputText" placeholder="Type something..." required aria-required="true" />
+          <button id="submitBtn" type="submit">Run</button>
+        </div>
+        <p id="formHelp" class="hint">Press <strong>Run</strong> to process your text.</p>
+      </form>
 
-    <div id="status" role="status" aria-live="polite" class="mt"></div>
+      <div id="status" role="status" aria-live="polite" class="status"></div>
 
-    <section aria-labelledby="resultHeading" class="mt">
-      <h2 id="resultHeading">Result</h2>
-      <div id="result" class="result" tabindex="-1" aria-live="polite"></div>
-    </section>
-  </main>
+      <section aria-labelledby="resultHeading" class="result-section">
+        <h2 id="resultHeading">Result</h2>
+        <div id="result" class="result-box" tabindex="-1" aria-live="polite"></div>
+      </section>
+    </main>
 
-  <footer class="mt-lg">
-    <small>© 2025 Your Name</small>
-  </footer>
+    <footer>
+      <p>© 2025 Vedat Begolli – <a href="https://github.com/vbe1994/fullstack-project-1">GitHub</a></p>
+    </footer>
+  </div>
 
   <script src="./app.js" type="module"></script>
 </body>
