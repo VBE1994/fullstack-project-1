@@ -1,35 +1,36 @@
 <!doctype html>
-<html lang="fi">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project 1 – Demo</title>
+  <meta name="description" content="Project 1 demo: input → result with validation, loading state, accessibility and XSS protection." />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header>
     <h1 id="app-title">Project 1</h1>
-    <p>Lyhyt kuvaus mitä appi tekee.</p>
+    <p>A short description of what the app does.</p>
   </header>
 
   <main id="app" role="main">
-    <form id="form" aria-describedby="formHelp">
-      <label for="inputText">Syöte</label>
+    <form id="form" aria-describedby="formHelp" novalidate>
+      <label for="inputText">Input</label>
       <input id="inputText" name="inputText" required aria-required="true" />
-      <button id="submitBtn" type="submit">Suorita</button>
-      <p id="formHelp">Syötä arvo ja paina Suorita. Tyhjään syötteeseen tulee virheilmoitus.</p>
+      <button id="submitBtn" type="submit" aria-live="off">Run</button>
+      <p id="formHelp">Enter a value and press Run. Empty input will show an error.</p>
     </form>
 
-    <div id="status" aria-live="polite"></div>
+    <div id="status" role="status" aria-live="polite" class="mt"></div>
 
-    <section aria-labelledby="resultHeading">
-      <h2 id="resultHeading">Tulos</h2>
-      <div id="result" class="result"></div>
+    <section aria-labelledby="resultHeading" class="mt">
+      <h2 id="resultHeading">Result</h2>
+      <div id="result" class="result" tabindex="-1" aria-live="polite"></div>
     </section>
   </main>
 
-  <footer>
-    <small>&copy; 2025 Your Name</small>
+  <footer class="mt-lg">
+    <small>© 2025 Your Name</small>
   </footer>
 
   <script src="./app.js" type="module"></script>
