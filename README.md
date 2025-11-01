@@ -35,8 +35,32 @@ git clone https://github.com/vbe1994/fullstack-project-1.git
 cd fullstack-project-1
 start index.html
 
-## macOS
+
+
+### macOS
 bash
 git clone https://github.com/vbe1994/fullstack-project-1.git
 cd fullstack-project-1
 open index.html
+
+
+### Demo Video Link
+
+
+
+
+### 💭 Reflection 
+
+This project helped me understand how to build, style, and deploy a simple but accessible web application using only HTML, CSS, and JavaScript. 
+One of the key learnings was how to organize files and maintain clean separation between structure (HTML), style (CSS), and logic (JS).
+
+I also learned how to handle form validation and accessibility features, such as ARIA attributes and keyboard navigation. Implementing input validation 
+and feedback improved my understanding of user experience and accessibility standards.
+
+Another major takeaway was deploying the app using GitHub Pages. It was the first time I configured a live project deployment directly from a GitHub 
+repository, which gave me confidence in using version control and hosting tools.
+
+Finally, I learned the importance of reflection and documentation — writing a clear README, including screenshots and a live demo, makes a project 
+professional and understandable for others. Overall, this assignment strengthened both my technical and documentation skills.
+
+
