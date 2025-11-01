@@ -30,7 +30,7 @@
 ## ⚙️ Run Locally
 
 ### Windows
-```bash
+
 git clone https://github.com/vbe1994/fullstack-project-1.git
 cd fullstack-project-1
 start index.html
@@ -38,7 +38,7 @@ start index.html
 
 
 ### macOS
-bash
+
 git clone https://github.com/vbe1994/fullstack-project-1.git
 cd fullstack-project-1
 open index.html
@@ -46,7 +46,7 @@ open index.html
 
 ### Demo Video Link
 
-https://video.laurea.fi/media/Project1-+Fullstack/0_48nh76jn 
+https://video.laurea.fi/media/Project1-+Fullstack/0_48nh76jn
 
 
 ### 💭 Reflection 
